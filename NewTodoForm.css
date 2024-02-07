@@ -1,0 +1,18 @@
+.NewTodoForm form {
+    display: flex;
+    justify-content: center; /* This will center the form contents */
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Optional: Adds space between form elements */
+  }
+  
+  .NewTodoForm input, .NewTodoForm button {
+    width: 80%; /* Adjust based on preference */
+    padding: 10px;
+    margin: 0 auto; /* Auto margins on the sides to center inline or inline-block elements */
+  }
+  
+  /* Optional: Center the button if it's on a new line */
+  .NewTodoForm button {
+    display: block; /* Make the button a block element to respect width */
+  }

@@ -1,0 +1,38 @@
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.Todo.fadeOut {
+  animation: fadeOut 1s ease forwards;
+}
+
+.Todo {
+  &.completed {
+    text-decoration: line-through;
+  }
+}
+.todo-item {
+  border-bottom: 1px solid #ccc; /* Adds a line separation */
+  padding-bottom: 10px; /* Adds some space at the bottom */
+  margin-bottom: 10px; /* Adds space between todo items */
+}
+.Todo button {
+  font-size: 14px;
+  border: none;
+  background-color: #e21414;
+  color: #0173ee;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Todo button:hover {
+  background-color: #e0e0e0;
+  color: #555;
+}
